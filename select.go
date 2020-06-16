@@ -9,9 +9,9 @@ func main() {
 	c := make(chan int)
 	q := make(chan int)
 	go func() {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 		c <- 0
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 		q <- 0
 	}()
 
